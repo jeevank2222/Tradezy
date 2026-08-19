@@ -1,0 +1,80 @@
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: monospace;
+}
+
+.hero-title {
+    font-size: 70px;
+    color: #2D3142;
+    line-height: 1.05;
+    font-weight: 850;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+
+.nav-link {
+  font-weight: 600;
+  font-size: 16px;
+  color: #7c7e8c;
+  padding: 10px 16px 8px;
+}
+
+.tradezy-logo {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 6px;
+}
+
+.navbar-brand {
+  margin-right: 40px;
+}
+
+.navbar-nav {
+  gap: 12px;
+}
+
+.btn-primary {
+  background-color: #00A86B;
+  border-color: #00A86B;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #008F5B;
+  border-color: #008F5B;
+}
+
+.btn-get{
+  border-radius: 24px;
+  padding: 10px 24px;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+.home-head {
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #2D3142;
+  
+  margin: 0 0 24px;
+}
+
+.home-small-head{
+  font-size: 26px;
+  font-weight: 700;
+  color:  #4A4F63;
+  margin: 0 0 16px;
+}
