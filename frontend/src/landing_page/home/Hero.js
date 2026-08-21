@@ -8,7 +8,7 @@ function Hero() {
                 <h1 className='hero-title mb-5'>Investing&nbsp;made&nbsp;easy</h1>
                 <button className='btn btn-primary btn-get'>Get started</button>
                 </div>
-                <img src='images/Hero.png' alt='HeroImg' />
+                <img src='images/Hero1.png' alt='HeroImg' />
             </div>
         </div>
      );

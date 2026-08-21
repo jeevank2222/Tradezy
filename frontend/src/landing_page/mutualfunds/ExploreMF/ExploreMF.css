@@ -1,0 +1,75 @@
+.explore-mf {
+    padding: 40px 10rem;
+}
+
+.explore-mf h1 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #2d3142;
+}
+
+/* 4 cards per row */
+.mf-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Card */
+.mf-card {
+    background: white;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    padding: 20px;
+
+    min-height: 210px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.mf-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Image */
+.mf-image {
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+}
+
+.mf-image img {
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+}
+
+/* Mutual fund name */
+.mf-card h3 {
+    margin: 0;
+
+    text-align: center;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+    color: #333;
+    line-height: 1.5;
+}
