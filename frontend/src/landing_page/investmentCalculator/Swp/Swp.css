@@ -1,0 +1,154 @@
+.swp-information {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.swp-section {
+    margin-bottom: 55px;
+}
+
+.swp-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #44475B;
+    margin: 0 0 20px;
+    line-height: 1.4;
+}
+
+.swp-section p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #44475B;
+    margin: 0 0 18px;
+}
+
+.swp-section ul,
+.swp-section ol {
+    padding-left: 22px;
+    margin: 18px 0;
+}
+
+.swp-section li {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #44475B;
+    margin-bottom: 10px;
+}
+
+.swp-section strong {
+    color: #44475B;
+    font-weight: 600;
+}
+
+.formula-box {
+    background: #f8fbfb;
+    border-radius: 10px;
+    padding: 22px;
+    margin: 28px 0;
+    text-align: center;
+}
+
+.formula {
+    font-size: 19px;
+    font-weight: 600;
+    color: #2b9da4;
+}
+
+.swp-table {
+    margin: 28px 0;
+    background: #fafafa;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.swp-table-header,
+.swp-table-row {
+    display: grid;
+    grid-template-columns: 0.6fr 1.3fr 1fr 1.2fr 1.3fr;
+    min-width: 650px;
+}
+
+.swp-table-header {
+    background: #f5f7f7;
+    font-weight: 600;
+    color: #44475B;
+}
+
+.swp-table-header div,
+.swp-table-row div {
+    padding: 15px 16px;
+    font-size: 14px;
+}
+
+.swp-table-row {
+    color: #44475B;
+}
+
+.swp-table-row div {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.swp-table-row:nth-child(even) {
+    background: #fcfcfc;
+}
+
+.swp-disclaimer {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 22px;
+    margin-top: 55px;
+}
+
+.swp-disclaimer h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #44475B;
+    margin: 0 0 12px;
+}
+
+.swp-disclaimer p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #44475B;
+    margin: 0 0 10px;
+}
+
+@media (max-width: 700px) {
+    .swp-information {
+        padding: 0 16px;
+        margin-top: 40px;
+    }
+
+    .swp-section {
+        margin-bottom: 45px;
+    }
+
+    .swp-section h2 {
+        font-size: 24px;
+    }
+
+    .swp-section p,
+    .swp-section li {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .formula-box {
+        padding: 18px;
+    }
+
+    .formula {
+        font-size: 17px;
+    }
+
+    .swp-table {
+        overflow-x: auto;
+    }
+
+    .swp-table-header,
+    .swp-table-row {
+        min-width: 650px;
+    }
+}

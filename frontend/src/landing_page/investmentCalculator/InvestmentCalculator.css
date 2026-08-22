@@ -1,0 +1,274 @@
+.calculator-page {
+    width: 100%;
+}
+
+.calculator-nav {
+    display: flex;
+    gap: 10px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eeeeee;
+    padding-left: 10rem;
+}
+
+.calculator-nav a {
+    text-decoration: none;
+    color: #7c7e8c;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-radius: 8px;
+}
+
+.calculator-nav a.active {
+    color: #2b9da4;
+    background-color: #eefafa;
+}
+
+.calculator-content {
+    padding: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sip-information {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.sip-section {
+    margin-bottom: 55px;
+}
+
+.sip-section h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #44475B;
+    margin: 0 0 20px;
+    line-height: 1.4;
+}
+
+.sip-section p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #44475B;
+    margin: 0 0 18px;
+}
+
+.sip-section ul,
+.sip-section ol {
+    padding-left: 22px;
+    margin: 18px 0;
+}
+
+.sip-section li {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #44475B;
+    margin-bottom: 10px;
+}
+
+.sip-section strong {
+    color: #44475B;
+    font-weight: 600;
+}
+
+.formula-box {
+    background: #f8fbfb;
+    border-radius: 10px;
+    padding: 22px;
+    margin: 28px 0;
+    text-align: center;
+}
+
+.formula {
+    font-size: 19px;
+    font-weight: 600;
+    color: #2b9da4;
+}
+
+.calculation-box {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 24px 0;
+}
+
+.calculation-box p {
+    margin: 0 0 8px;
+    color: #44475B;
+}
+
+.calculation-box p:last-child {
+    margin-bottom: 0;
+}
+
+.example-card {
+    border: none;
+    border-radius: 12px;
+    padding: 8px 20px;
+    margin: 28px 0;
+    background: #fafafa;
+}
+
+.example-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5px;
+    font-size: 16px;
+}
+
+.example-row span {
+    color: #44475B;
+}
+
+.example-row strong {
+    color: #44475B;
+    font-weight: 600;
+}
+
+.comparison-table {
+    margin-top: 25px;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    background: #fafafa;
+}
+
+.comparison-header,
+.comparison-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+}
+
+.comparison-header {
+    background: #f5f7f7;
+    font-weight: 600;
+    color: #44475B;
+}
+
+.comparison-header div,
+.comparison-row div {
+    padding: 16px 18px;
+    border: none;
+}
+
+.comparison-row {
+    border: none;
+}
+
+.comparison-row:nth-child(even) {
+    background: #fcfcfc;
+}
+
+.comparison-row div {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #44475B;
+}
+
+.sip-disclaimer {
+    background: #fafafa;
+    border: none;
+    border-radius: 10px;
+    padding: 22px;
+    margin-top: 55px;
+}
+
+.sip-disclaimer h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #44475B;
+    margin: 0 0 12px;
+}
+
+.sip-disclaimer p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #44475B;
+    margin: 0 0 10px;
+}
+
+@media (max-width: 700px) {
+    .sip-information {
+        padding: 0 16px;
+        margin-top: 40px;
+    }
+
+    .sip-section {
+        margin-bottom: 45px;
+    }
+
+    .sip-section h2 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .sip-section p,
+    .sip-section li {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .formula-box {
+        padding: 18px;
+    }
+
+    .formula {
+        font-size: 18px;
+    }
+
+    .example-card {
+        padding: 6px 15px;
+    }
+
+    .comparison-table {
+        overflow-x: auto;
+    }
+
+    .comparison-header,
+    .comparison-row {
+        min-width: 600px;
+    }
+
+    .comparison-header div,
+    .comparison-row div {
+        padding: 14px;
+    }
+}

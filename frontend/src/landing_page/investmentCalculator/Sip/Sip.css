@@ -1,0 +1,204 @@
+.sip-information {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.sip-section {
+    margin-bottom: 45px;
+}
+
+.sip-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2d3142;
+    margin-bottom: 18px;
+}
+
+.sip-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666a76;
+    margin-bottom: 15px;
+}
+
+.sip-section ul,
+.sip-section ol {
+    padding-left: 25px;
+    margin-top: 15px;
+}
+
+.sip-section li {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666a76;
+    margin-bottom: 8px;
+}
+
+.sip-section strong {
+    color: #2d3142;
+}
+
+
+/* Formula */
+
+.formula-box {
+    background: #f6fbfb;
+    border: 1px solid #dceff0;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.formula {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2b9da4;
+}
+
+
+/* Calculation */
+
+.calculation-box {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin: 20px 0;
+}
+
+.calculation-box p {
+    margin-bottom: 8px;
+    color: #2d3142;
+}
+
+
+/* Example */
+
+.example-card {
+    border: 1px solid #e6e8eb;
+    border-radius: 14px;
+    padding: 10px 22px;
+    margin: 25px 0;
+    box-shadow: 0 5px 20px rgba(45, 49, 66, 0.04);
+}
+
+.example-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+}
+
+.example-row:last-child {
+    border-bottom: none;
+}
+
+.example-row span {
+    color: #7c7e8c;
+}
+
+.example-row strong {
+    color: #2d3142;
+}
+
+
+/* Comparison */
+
+.comparison-table {
+    border: 1px solid #e6e8eb;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.comparison-header,
+.comparison-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+}
+
+.comparison-header {
+    background: #f5fbfb;
+    font-weight: 700;
+    color: #2d3142;
+}
+
+.comparison-header div,
+.comparison-row div {
+    padding: 15px;
+    border-right: 1px solid #eeeeee;
+}
+
+.comparison-header div:last-child,
+.comparison-row div:last-child {
+    border-right: none;
+}
+
+.comparison-row {
+    border-top: 1px solid #eeeeee;
+}
+
+.comparison-row div {
+    font-size: 14px;
+    color: #666a76;
+}
+
+
+/* Disclaimer */
+
+.sip-disclaimer {
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.sip-disclaimer h3 {
+    font-size: 17px;
+    color: #2d3142;
+    margin-bottom: 10px;
+}
+
+.sip-disclaimer p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #7c7e8c;
+    margin-bottom: 10px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .sip-information {
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+
+    .sip-section h2 {
+        font-size: 23px;
+    }
+
+    .sip-section p,
+    .sip-section li {
+        font-size: 14px;
+    }
+
+    .formula {
+        font-size: 18px;
+    }
+
+    .comparison-table {
+        overflow-x: auto;
+    }
+
+    .comparison-header,
+    .comparison-row {
+        min-width: 650px;
+    }
+
+}

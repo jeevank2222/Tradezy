@@ -15,6 +15,11 @@ import Orders from './landing_page/stocks/Orders/Orders.js';
 import Position from './landing_page/stocks/Position/Position.js';
 import ExploreMF from './landing_page/mutualfunds/ExploreMF/ExploreMF.js';
 import Dashboard from './landing_page/mutualfunds/Dashboard/Dashboard.js';
+import Fixed from './landing_page/investmentCalculator/Fd/Fixed.js';
+import Sip from './landing_page/investmentCalculator/Sip/Sip.js';
+import Swp from './landing_page/investmentCalculator/Swp/Swp.js';
+import Lumpsum from './landing_page/investmentCalculator/Lumpsum/Lumpsum.js';
+import Retirement from './landing_page/investmentCalculator/Retirement/Retirement.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,7 +40,13 @@ root.render(
             <Route path='dashboard' element={<Dashboard />} />
     </Route>
 
-    <Route path='/calculator' element={<InvestmentCalculator/>}></Route>
+    <Route path='/calculator' element={<InvestmentCalculator/>}>
+                <Route index element={<Sip />}/>
+                <Route path="lumpsum" element={<Lumpsum />} />
+                <Route path="swp" element={<Swp />} />
+                <Route path="fd" element={<Fixed />}  />
+                <Route path="retirement" element={<Retirement />}/>
+    </Route>
     <Route path='/signup' element={<Signup/>}></Route>
   </Routes>
   <Footer/>

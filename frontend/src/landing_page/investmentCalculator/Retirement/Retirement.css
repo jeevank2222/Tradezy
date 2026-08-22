@@ -1,0 +1,224 @@
+.retirement-information {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.retirement-section {
+    margin-bottom: 45px;
+}
+
+.retirement-section h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #44475B;
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+.retirement-section p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #44475B;
+    margin-bottom: 15px;
+}
+
+.retirement-section ul,
+.retirement-section ol {
+    padding-left: 25px;
+    margin-top: 15px;
+}
+
+.retirement-section li {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #44475B;
+    margin-bottom: 8px;
+}
+
+.retirement-section strong {
+    color: #44475B;
+    font-weight: 600;
+}
+
+.retirement-formula-box {
+    background: #f6fbfb;
+    border: 1px solid #dceff0;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+    text-align: center;
+}
+
+.retirement-formula {
+    font-size: 22px;
+    font-weight: 600;
+    color: #2b9da4;
+    line-height: 1.5;
+}
+
+.retirement-calculation-box {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin: 20px 0;
+}
+
+.retirement-calculation-box p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: #44475B;
+}
+
+.retirement-example-card {
+    border: 1px solid #e6e8eb;
+    border-radius: 14px;
+    padding: 10px 22px;
+    margin: 25px 0;
+    box-shadow: 0 5px 20px rgba(45, 49, 66, 0.04);
+}
+
+.retirement-example-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 16px;
+}
+
+.retirement-example-row:last-child {
+    border-bottom: none;
+}
+
+.retirement-example-row span {
+    color: #44475B;
+}
+
+.retirement-example-row strong {
+    color: #44475B;
+    font-weight: 600;
+}
+
+.retirement-table {
+    width: 100%;
+    border: 1px solid #e6e8eb;
+    border-radius: 12px;
+    overflow-x: auto;
+    margin-top: 25px;
+}
+
+.retirement-table-header,
+.retirement-table-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1.3fr 1fr 1.2fr;
+    min-width: 650px;
+}
+
+.retirement-table-header {
+    background: #f5fbfb;
+    font-weight: 700;
+    color: #44475B;
+}
+
+.retirement-table-header div,
+.retirement-table-row div {
+    padding: 15px;
+    border-right: 1px solid #eeeeee;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.retirement-table-header div:last-child,
+.retirement-table-row div:last-child {
+    border-right: none;
+}
+
+.retirement-table-row {
+    border-top: 1px solid #eeeeee;
+}
+
+.retirement-table-row div {
+    color: #44475B;
+    font-weight: 400;
+}
+
+.retirement-table-row:nth-child(even) {
+    background: #fcfcfc;
+}
+
+.retirement-disclaimer {
+    background: #fafafa;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+.retirement-disclaimer h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #44475B;
+    margin-bottom: 10px;
+}
+
+.retirement-disclaimer p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #44475B;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+
+    .retirement-information {
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+
+    .retirement-section h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .retirement-section p,
+    .retirement-section li {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .retirement-formula-box {
+        padding: 20px;
+    }
+
+    .retirement-formula {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .retirement-table {
+        overflow-x: auto;
+    }
+
+    .retirement-table-header,
+    .retirement-table-row {
+        min-width: 650px;
+    }
+
+    .retirement-table-header div,
+    .retirement-table-row div {
+        padding: 13px 14px;
+        font-size: 16px;
+    }
+
+    .retirement-disclaimer {
+        padding: 20px;
+    }
+
+    .retirement-disclaimer p {
+        font-size: 16px;
+    }
+}
