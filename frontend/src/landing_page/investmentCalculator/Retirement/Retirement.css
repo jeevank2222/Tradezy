@@ -5,37 +5,35 @@
 }
 
 .retirement-section {
-    margin-bottom: 45px;
+    margin-bottom: 55px;
 }
 
 .retirement-section h2 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     color: #44475B;
-    margin-bottom: 18px;
+    margin: 0 0 20px;
     line-height: 1.4;
 }
 
 .retirement-section p {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.9;
     color: #44475B;
-    margin-bottom: 15px;
+    margin: 0 0 18px;
 }
 
 .retirement-section ul,
 .retirement-section ol {
-    padding-left: 25px;
-    margin-top: 15px;
+    padding-left: 22px;
+    margin: 18px 0;
 }
 
 .retirement-section li {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.9;
     color: #44475B;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .retirement-section strong {
@@ -43,54 +41,38 @@
     font-weight: 600;
 }
 
+/* Formula */
+
 .retirement-formula-box {
-    background: #f6fbfb;
-    border: 1px solid #dceff0;
-    border-radius: 12px;
-    padding: 25px;
-    margin: 25px 0;
+    background: #f8fbfb;
+    border-radius: 10px;
+    padding: 22px;
+    margin: 28px 0;
     text-align: center;
 }
 
 .retirement-formula {
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 600;
     color: #2b9da4;
-    line-height: 1.5;
 }
 
-.retirement-calculation-box {
-    background: #f8f9fa;
-    border-radius: 10px;
-    padding: 20px 25px;
-    margin: 20px 0;
-}
-
-.retirement-calculation-box p {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 8px;
-    color: #44475B;
-}
+/* Example */
 
 .retirement-example-card {
-    border: 1px solid #e6e8eb;
-    border-radius: 14px;
-    padding: 10px 22px;
-    margin: 25px 0;
-    box-shadow: 0 5px 20px rgba(45, 49, 66, 0.04);
+    border: none;
+    border-radius: 12px;
+    padding: 8px 20px;
+    margin: 28px 0;
+    background: #fafafa;
 }
 
 .retirement-example-row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 5px;
-    border-bottom: 1px solid #eeeeee;
     font-size: 16px;
-}
-
-.retirement-example-row:last-child {
-    border-bottom: none;
 }
 
 .retirement-example-row span {
@@ -102,101 +84,131 @@
     font-weight: 600;
 }
 
+/* Calculation */
+
+.retirement-calculation-box {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 24px 0;
+}
+
+.retirement-calculation-box p {
+    margin: 0 0 10px;
+    color: #44475B;
+}
+
+.retirement-calculation-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Comparison Table */
+
 .retirement-table {
-    width: 100%;
-    border: 1px solid #e6e8eb;
-    border-radius: 12px;
-    overflow-x: auto;
     margin-top: 25px;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    background: #fafafa;
 }
 
 .retirement-table-header,
 .retirement-table-row {
     display: grid;
-    grid-template-columns: 1.2fr 1.3fr 1fr 1.2fr;
-    min-width: 650px;
+    grid-template-columns: 1fr 1.2fr 1fr 1.2fr;
 }
 
 .retirement-table-header {
-    background: #f5fbfb;
-    font-weight: 700;
+    background: #f5f7f7;
+    font-weight: 600;
     color: #44475B;
 }
 
 .retirement-table-header div,
 .retirement-table-row div {
-    padding: 15px;
-    border-right: 1px solid #eeeeee;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.retirement-table-header div:last-child,
-.retirement-table-row div:last-child {
-    border-right: none;
+    padding: 16px 18px;
+    border: none;
 }
 
 .retirement-table-row {
-    border-top: 1px solid #eeeeee;
-}
-
-.retirement-table-row div {
-    color: #44475B;
-    font-weight: 400;
+    border: none;
 }
 
 .retirement-table-row:nth-child(even) {
     background: #fcfcfc;
 }
 
+.retirement-table-row div {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #44475B;
+}
+
+/* Disclaimer */
+
 .retirement-disclaimer {
     background: #fafafa;
-    border: 1px solid #eeeeee;
-    border-radius: 12px;
-    padding: 25px;
-    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    padding: 22px;
+    margin-top: 55px;
 }
 
 .retirement-disclaimer h3 {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     color: #44475B;
-    margin-bottom: 10px;
+    margin: 0 0 12px;
 }
 
 .retirement-disclaimer p {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.8;
     color: #44475B;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
 
-@media (max-width: 700px) {
+.retirement-disclaimer p:last-child {
+    margin-bottom: 0;
+}
 
+/* Mobile */
+
+@media (max-width: 700px) {
     .retirement-information {
-        padding: 0 15px;
+        padding: 0 16px;
         margin-top: 40px;
+    }
+
+    .retirement-section {
+        margin-bottom: 45px;
     }
 
     .retirement-section h2 {
         font-size: 24px;
-        font-weight: 700;
+        margin-bottom: 16px;
     }
 
     .retirement-section p,
     .retirement-section li {
         font-size: 16px;
-        font-weight: 400;
+        line-height: 1.8;
     }
 
     .retirement-formula-box {
-        padding: 20px;
+        padding: 18px;
     }
 
     .retirement-formula {
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 17px;
+    }
+
+    .retirement-example-card {
+        padding: 6px 15px;
+    }
+
+    .retirement-calculation-box {
+        padding: 16px 18px;
     }
 
     .retirement-table {
@@ -210,15 +222,6 @@
 
     .retirement-table-header div,
     .retirement-table-row div {
-        padding: 13px 14px;
-        font-size: 16px;
-    }
-
-    .retirement-disclaimer {
-        padding: 20px;
-    }
-
-    .retirement-disclaimer p {
-        font-size: 16px;
+        padding: 14px;
     }
 }

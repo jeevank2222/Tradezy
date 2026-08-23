@@ -1,3 +1,174 @@
+.sip-page {
+    min-height: 100vh;
+    padding: 15px 8%;
+    background: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.sip-calc-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sip-calc-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #44475B;
+    margin: 0 0 12px;
+}
+
+.sip-calc-header p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #44475B;
+    margin: 0;
+}
+
+.sip-calc-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 45px;
+    border: 1px solid #e6e8eb;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(45, 49, 66, 0.04);
+}
+
+.sip-calc-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+.sip-calc-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.sip-calc-label label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #44475B;
+}
+
+.sip-calc-label span {
+    min-width: 80px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 7px;
+    background: #f8fbfb;
+    color: #2b9da4;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sip-calc-input input {
+    width: 100%;
+    height: 5px;
+    appearance: none;
+    border-radius: 10px;
+    outline: none;
+    background: #dceff0;
+    cursor: pointer;
+}
+
+.sip-calc-input input::-webkit-slider-thumb {
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #2b9da4;
+    box-shadow: 0 0 0 1px #2b9da4;
+    cursor: pointer;
+}
+
+.sip-calc-input input::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #2b9da4;
+    cursor: pointer;
+}
+
+.sip-calc-range {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+    color: #44475B;
+    font-size: 14px;
+}
+
+.sip-calc-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sip-calc-result-card {
+    padding: 28px;
+    border-radius: 10px;
+    background: #f8fbfb;
+}
+
+.sip-calc-result-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #44475B;
+    margin: 0;
+}
+
+.sip-calc-result-card h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2b9da4;
+    margin: 8px 0 24px;
+}
+
+.sip-calc-divider {
+    height: 1px;
+    margin-bottom: 20px;
+    background: #eeeeee;
+}
+
+.sip-calc-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.sip-calc-row span,
+.sip-calc-row strong {
+    color: #44475B;
+}
+
+.sip-calc-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: #2b9da4;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sip-calc-button:hover {
+    background: #23858b;
+}
+
 .sip-information {
     max-width: 1000px;
     margin: 60px auto;
@@ -5,60 +176,55 @@
 }
 
 .sip-section {
-    margin-bottom: 45px;
+    margin-bottom: 55px;
 }
 
 .sip-section h2 {
-    font-size: 28px;
-    font-weight: 700;
-    color: #2d3142;
-    margin-bottom: 18px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #44475B;
+    margin: 0 0 20px;
+    line-height: 1.4;
 }
 
 .sip-section p {
     font-size: 16px;
-    line-height: 1.8;
-    color: #666a76;
-    margin-bottom: 15px;
+    line-height: 1.9;
+    color: #44475B;
+    margin: 0 0 18px;
 }
 
 .sip-section ul,
 .sip-section ol {
-    padding-left: 25px;
-    margin-top: 15px;
+    padding-left: 22px;
+    margin: 18px 0;
 }
 
 .sip-section li {
-    font-size: 15px;
-    line-height: 1.8;
-    color: #666a76;
-    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #44475B;
+    margin-bottom: 10px;
 }
 
 .sip-section strong {
-    color: #2d3142;
+    color: #44475B;
+    font-weight: 600;
 }
 
-
-/* Formula */
-
 .formula-box {
-    background: #f6fbfb;
-    border: 1px solid #dceff0;
-    border-radius: 12px;
-    padding: 25px;
-    margin: 25px 0;
+    background: #f8fbfb;
+    border-radius: 10px;
+    padding: 22px;
+    margin: 28px 0;
     text-align: center;
 }
 
 .formula {
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 600;
     color: #2b9da4;
 }
-
-
-/* Calculation */
 
 .calculation-box {
     background: #f8f9fa;
@@ -69,15 +235,12 @@
 
 .calculation-box p {
     margin-bottom: 8px;
-    color: #2d3142;
+    color: #44475B;
 }
-
-
-/* Example */
 
 .example-card {
     border: 1px solid #e6e8eb;
-    border-radius: 14px;
+    border-radius: 10px;
     padding: 10px 22px;
     margin: 25px 0;
     box-shadow: 0 5px 20px rgba(45, 49, 66, 0.04);
@@ -88,29 +251,24 @@
     justify-content: space-between;
     padding: 15px 5px;
     border-bottom: 1px solid #eeeeee;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .example-row:last-child {
     border-bottom: none;
 }
 
-.example-row span {
-    color: #7c7e8c;
-}
-
+.example-row span,
 .example-row strong {
-    color: #2d3142;
+    color: #44475B;
 }
-
-
-/* Comparison */
 
 .comparison-table {
-    border: 1px solid #e6e8eb;
-    border-radius: 12px;
-    overflow: hidden;
     margin-top: 25px;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    background: #fafafa;
 }
 
 .comparison-header,
@@ -120,76 +278,95 @@
 }
 
 .comparison-header {
-    background: #f5fbfb;
-    font-weight: 700;
-    color: #2d3142;
+    background: #f5f7f7;
+    font-weight: 600;
+    color: #44475B;
 }
 
 .comparison-header div,
 .comparison-row div {
-    padding: 15px;
-    border-right: 1px solid #eeeeee;
-}
-
-.comparison-header div:last-child,
-.comparison-row div:last-child {
-    border-right: none;
+    padding: 16px 18px;
+    border: none;
 }
 
 .comparison-row {
-    border-top: 1px solid #eeeeee;
+    border: none;
+}
+
+.comparison-row:nth-child(even) {
+    background: #fcfcfc;
 }
 
 .comparison-row div {
-    font-size: 14px;
-    color: #666a76;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #44475B;
 }
-
-
-/* Disclaimer */
 
 .sip-disclaimer {
     background: #fafafa;
-    border: 1px solid #eeeeee;
-    border-radius: 12px;
-    padding: 25px;
-    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    padding: 22px;
+    margin-top: 55px;
 }
 
 .sip-disclaimer h3 {
-    font-size: 17px;
-    color: #2d3142;
-    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #44475B;
+    margin: 0 0 12px;
 }
 
 .sip-disclaimer p {
-    font-size: 13px;
-    line-height: 1.7;
-    color: #7c7e8c;
-    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #44475B;
+    margin: 0 0 10px;
 }
 
+.sip-disclaimer p:last-child {
+    margin-bottom: 0;
+}
 
-/* Mobile */
+@media (max-width: 800px) {
+    .sip-page {
+        padding: 40px 5%;
+    }
+
+    .sip-calc-container {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}
 
 @media (max-width: 700px) {
-
     .sip-information {
-        padding: 0 15px;
+        padding: 0 16px;
         margin-top: 40px;
     }
 
+    .sip-section {
+        margin-bottom: 45px;
+    }
+
     .sip-section h2 {
-        font-size: 23px;
+        font-size: 24px;
+        margin-bottom: 16px;
     }
 
     .sip-section p,
     .sip-section li {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .formula-box {
+        padding: 18px;
     }
 
     .formula {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .comparison-table {
@@ -201,4 +378,35 @@
         min-width: 650px;
     }
 
+    .comparison-header div,
+    .comparison-row div {
+        padding: 14px;
+    }
+
+    .sip-disclaimer {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .sip-calc-header h1 {
+        font-size: 28px;
+    }
+
+    .sip-calc-container {
+        padding: 20px;
+    }
+
+    .sip-calc-label {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .sip-calc-result-card {
+        padding: 22px;
+    }
+
+    .sip-calc-result-card h2 {
+        font-size: 28px;
+    }
 }

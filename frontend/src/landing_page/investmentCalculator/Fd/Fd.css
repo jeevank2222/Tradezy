@@ -5,37 +5,35 @@
 }
 
 .fd-section {
-    margin-bottom: 45px;
+    margin-bottom: 55px;
 }
 
 .fd-section h2 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     color: #44475B;
-    margin-bottom: 18px;
+    margin: 0 0 20px;
     line-height: 1.4;
 }
 
 .fd-section p {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.9;
     color: #44475B;
-    margin-bottom: 15px;
+    margin: 0 0 18px;
 }
 
 .fd-section ul,
 .fd-section ol {
-    padding-left: 25px;
-    margin-top: 15px;
+    padding-left: 22px;
+    margin: 18px 0;
 }
 
 .fd-section li {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.9;
     color: #44475B;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .fd-section strong {
@@ -43,131 +41,143 @@
     font-weight: 600;
 }
 
-.fd-section .formula-box {
-    background: #f6fbfb;
-    border: 1px solid #dceff0;
-    border-radius: 12px;
-    padding: 25px;
-    margin: 25px 0;
+/* Formula */
+
+.formula-box {
+    background: #f8fbfb;
+    border-radius: 10px;
+    padding: 22px;
+    margin: 28px 0;
     text-align: center;
 }
 
-.fd-section .formula {
-    font-size: 22px;
+.formula {
+    font-size: 19px;
     font-weight: 600;
     color: #2b9da4;
-    line-height: 1.5;
 }
 
-.fd-section .calculation-box {
+/* Calculation */
+
+.calculation-box {
     background: #f8f9fa;
     border-radius: 10px;
-    padding: 20px 25px;
-    margin: 20px 0;
+    padding: 18px 22px;
+    margin: 24px 0;
 }
 
-.fd-section .calculation-box p {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 8px;
+.calculation-box p {
+    margin: 0 0 10px;
     color: #44475B;
 }
 
+.calculation-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* FD Table */
+
 .fd-table {
-    width: 100%;
-    border: 1px solid #e6e8eb;
-    border-radius: 12px;
-    overflow-x: auto;
     margin-top: 25px;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    background: #fafafa;
 }
 
 .fd-table-header,
 .fd-table-row {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr 1fr 1.2fr;
-    min-width: 700px;
+    grid-template-columns: 0.8fr 1.4fr 1fr 0.8fr 1.4fr;
 }
 
 .fd-table-header {
-    background: #f5fbfb;
-    font-weight: 700;
+    background: #f5f7f7;
+    font-weight: 600;
     color: #44475B;
 }
 
 .fd-table-header div,
 .fd-table-row div {
-    padding: 15px;
-    border-right: 1px solid #eeeeee;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.fd-table-header div:last-child,
-.fd-table-row div:last-child {
-    border-right: none;
+    padding: 16px 18px;
+    border: none;
 }
 
 .fd-table-row {
-    border-top: 1px solid #eeeeee;
-}
-
-.fd-table-row div {
-    color: #44475B;
-    font-weight: 400;
+    border: none;
 }
 
 .fd-table-row:nth-child(even) {
     background: #fcfcfc;
 }
 
+.fd-table-row div {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #44475B;
+}
+
+/* Disclaimer */
+
 .fd-disclaimer {
     background: #fafafa;
-    border: 1px solid #eeeeee;
-    border-radius: 12px;
-    padding: 25px;
-    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    padding: 22px;
+    margin-top: 55px;
 }
 
 .fd-disclaimer h3 {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     color: #44475B;
-    margin-bottom: 10px;
+    margin: 0 0 12px;
 }
 
 .fd-disclaimer p {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.8;
     color: #44475B;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
 
-@media (max-width: 700px) {
+.fd-disclaimer p:last-child {
+    margin-bottom: 0;
+}
 
+/* Mobile */
+
+@media (max-width: 700px) {
     .fd-information {
-        padding: 0 15px;
+        padding: 0 16px;
         margin-top: 40px;
+    }
+
+    .fd-section {
+        margin-bottom: 45px;
     }
 
     .fd-section h2 {
         font-size: 24px;
-        font-weight: 700;
+        margin-bottom: 16px;
     }
 
     .fd-section p,
     .fd-section li {
         font-size: 16px;
-        font-weight: 400;
+        line-height: 1.8;
     }
 
-    .fd-section .formula-box {
-        padding: 20px;
+    .formula-box {
+        padding: 18px;
     }
 
-    .fd-section .formula {
-        font-size: 18px;
-        font-weight: 600;
+    .formula {
+        font-size: 17px;
+    }
+
+    .calculation-box {
+        padding: 16px 18px;
     }
 
     .fd-table {
@@ -181,16 +191,225 @@
 
     .fd-table-header div,
     .fd-table-row div {
-        padding: 13px 14px;
-        font-size: 16px;
+        padding: 14px;
+    }
+}
+
+
+
+.fd-page {
+    min-height: 100vh;
+    padding: 15px 8%;
+    background: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.fd-calc-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.fd-calc-header h1 {
+    margin: 0 0 12px;
+    color: #44475B;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.fd-calc-header p {
+    margin: 0;
+    color: #44475B;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.fd-calc-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 45px;
+    border: 1px solid #e6e8eb;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(45, 49, 66, 0.04);
+}
+
+.fd-calc-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+.fd-calc-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.fd-calc-label label {
+    color: #44475B;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fd-calc-label span {
+    min-width: 90px;
+    padding: 8px 12px;
+    border-radius: 7px;
+    background: #f8fbfb;
+    color: #2b9da4;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.fd-calc-input input {
+    width: 100%;
+    height: 5px;
+    appearance: none;
+    border-radius: 10px;
+    outline: none;
+    background: #dceff0;
+    cursor: pointer;
+}
+
+.fd-calc-input input::-webkit-slider-thumb {
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #2b9da4;
+    box-shadow: 0 0 0 1px #2b9da4;
+    cursor: pointer;
+}
+
+.fd-calc-input input::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #2b9da4;
+    cursor: pointer;
+}
+
+.fd-calc-range {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+    color: #44475B;
+    font-size: 14px;
+}
+
+.fd-calc-input select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #dceff0;
+    border-radius: 8px;
+    outline: none;
+    background: #f8fbfb;
+    color: #44475B;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.fd-calc-input select:focus {
+    border-color: #2b9da4;
+}
+
+.fd-calc-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fd-calc-result-card {
+    padding: 28px;
+    border-radius: 10px;
+    background: #f8fbfb;
+}
+
+.fd-calc-result-card p {
+    margin: 0;
+    color: #44475B;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.fd-calc-result-card h2 {
+    margin: 8px 0 24px;
+    color: #2b9da4;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.fd-calc-divider {
+    height: 1px;
+    margin-bottom: 20px;
+    background: #eeeeee;
+}
+
+.fd-calc-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+    color: #44475B;
+    font-size: 16px;
+}
+
+.fd-calc-row span,
+.fd-calc-row strong {
+    color: #44475B;
+}
+
+.fd-calc-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: #2b9da4;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.fd-calc-button:hover {
+    background: #23858b;
+}
+
+@media (max-width: 800px) {
+    .fd-page {
+        padding: 20px 5%;
     }
 
-    .fd-disclaimer {
-        padding: 20px;
+    .fd-calc-container {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .fd-calc-header h1 {
+        font-size: 28px;
     }
 
-    .fd-disclaimer p {
-        font-size: 16px;
+    .fd-calc-label {
+        align-items: flex-start;
+        gap: 10px;
     }
 
+    .fd-calc-result-card {
+        padding: 22px;
+    }
+
+    .fd-calc-result-card h2 {
+        font-size: 28px;
+    }
 }

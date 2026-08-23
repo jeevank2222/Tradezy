@@ -5,37 +5,35 @@
 }
 
 .lumpsum-section {
-    margin-bottom: 45px;
+    margin-bottom: 55px;
 }
 
 .lumpsum-section h2 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 600;
     color: #44475B;
-    margin-bottom: 18px;
+    margin: 0 0 20px;
     line-height: 1.4;
 }
 
 .lumpsum-section p {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.9;
     color: #44475B;
-    margin-bottom: 15px;
+    margin: 0 0 18px;
 }
 
 .lumpsum-section ul,
 .lumpsum-section ol {
-    padding-left: 25px;
-    margin-top: 15px;
+    padding-left: 22px;
+    margin: 18px 0;
 }
 
 .lumpsum-section li {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.9;
     color: #44475B;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .lumpsum-section strong {
@@ -43,160 +41,121 @@
     font-weight: 600;
 }
 
-.lumpsum-formula-box {
-    background: #f6fbfb;
-    border: 1px solid #dceff0;
-    border-radius: 12px;
-    padding: 25px;
-    margin: 25px 0;
+/* Formula */
+
+.formula-box {
+    background: #f8fbfb;
+    border-radius: 10px;
+    padding: 22px;
+    margin: 28px 0;
     text-align: center;
 }
 
-.lumpsum-formula {
-    font-size: 22px;
+.formula {
+    font-size: 19px;
     font-weight: 600;
     color: #2b9da4;
-    line-height: 1.5;
 }
 
-.lumpsum-calculation-box {
-    background: #f8f9fa;
-    border-radius: 10px;
-    padding: 20px 25px;
-    margin: 20px 0;
-}
-
-.lumpsum-calculation-box p {
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #44475B;
-}
-
-.lumpsum-example-card {
-    border: 1px solid #e6e8eb;
-    border-radius: 14px;
-    padding: 10px 22px;
-    margin: 25px 0;
-    box-shadow: 0 5px 20px rgba(45, 49, 66, 0.04);
-}
-
-.lumpsum-example-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 5px;
-    border-bottom: 1px solid #eeeeee;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.lumpsum-example-row:last-child {
-    border-bottom: none;
-}
-
-.lumpsum-example-row span {
-    color: #44475B;
-}
-
-.lumpsum-example-row strong {
-    color: #44475B;
-    font-weight: 600;
-}
+/* Lumpsum Table */
 
 .lumpsum-table {
-    width: 100%;
-    border: 1px solid #e6e8eb;
-    border-radius: 12px;
-    overflow-x: auto;
     margin-top: 25px;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    background: #fafafa;
 }
 
 .lumpsum-table-header,
 .lumpsum-table-row {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr 1fr 1.2fr;
-    min-width: 700px;
+    grid-template-columns: 1fr 1.3fr 1.2fr 1.3fr 1.5fr;
 }
 
 .lumpsum-table-header {
-    background: #f5fbfb;
-    font-weight: 700;
+    background: #f5f7f7;
+    font-weight: 600;
     color: #44475B;
 }
 
 .lumpsum-table-header div,
 .lumpsum-table-row div {
-    padding: 15px;
-    border-right: 1px solid #eeeeee;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.lumpsum-table-header div:last-child,
-.lumpsum-table-row div:last-child {
-    border-right: none;
+    padding: 16px 18px;
+    border: none;
 }
 
 .lumpsum-table-row {
-    border-top: 1px solid #eeeeee;
-}
-
-.lumpsum-table-row div {
-    color: #44475B;
-    font-weight: 400;
+    border: none;
 }
 
 .lumpsum-table-row:nth-child(even) {
     background: #fcfcfc;
 }
 
+.lumpsum-table-row div {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #44475B;
+}
+
+/* Disclaimer */
+
 .lumpsum-disclaimer {
     background: #fafafa;
-    border: 1px solid #eeeeee;
-    border-radius: 12px;
-    padding: 25px;
-    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    padding: 22px;
+    margin-top: 55px;
 }
 
 .lumpsum-disclaimer h3 {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 600;
     color: #44475B;
-    margin-bottom: 10px;
+    margin: 0 0 12px;
 }
 
 .lumpsum-disclaimer p {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.7;
+    line-height: 1.8;
     color: #44475B;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
+
+.lumpsum-disclaimer p:last-child {
+    margin-bottom: 0;
+}
+
+/* Mobile */
 
 @media (max-width: 700px) {
     .lumpsum-information {
-        padding: 0 15px;
+        padding: 0 16px;
         margin-top: 40px;
+    }
+
+    .lumpsum-section {
+        margin-bottom: 45px;
     }
 
     .lumpsum-section h2 {
         font-size: 24px;
-        font-weight: 700;
+        margin-bottom: 16px;
     }
 
     .lumpsum-section p,
     .lumpsum-section li {
         font-size: 16px;
-        font-weight: 400;
+        line-height: 1.8;
     }
 
-    .lumpsum-formula-box {
-        padding: 20px;
+    .formula-box {
+        padding: 18px;
     }
 
-    .lumpsum-formula {
-        font-size: 18px;
-        font-weight: 600;
+    .formula {
+        font-size: 17px;
     }
 
     .lumpsum-table {
@@ -210,15 +169,212 @@
 
     .lumpsum-table-header div,
     .lumpsum-table-row div {
-        padding: 13px 14px;
-        font-size: 16px;
+        padding: 14px;
     }
 
     .lumpsum-disclaimer {
-        padding: 20px;
+        padding: 18px;
+    }
+}
+
+
+
+.lumpsum-page {
+    min-height: 100vh;
+    padding: 15px 8%;
+    background: #fff;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.lumpsum-calc-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.lumpsum-calc-header h1 {
+    margin: 0 0 12px;
+    color: #44475B;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.lumpsum-calc-header p {
+    margin: 0;
+    color: #44475B;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.lumpsum-calc-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 45px;
+    border: 1px solid #e6e8eb;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(45, 49, 66, 0.04);
+}
+
+.lumpsum-calc-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+.lumpsum-calc-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.lumpsum-calc-label label {
+    color: #44475B;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.lumpsum-calc-label span {
+    min-width: 90px;
+    padding: 8px 12px;
+    border-radius: 7px;
+    background: #f8fbfb;
+    color: #2b9da4;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.lumpsum-calc-input input {
+    width: 100%;
+    height: 5px;
+    appearance: none;
+    border-radius: 10px;
+    outline: none;
+    background: #dceff0;
+    cursor: pointer;
+}
+
+.lumpsum-calc-input input::-webkit-slider-thumb {
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #2b9da4;
+    box-shadow: 0 0 0 1px #2b9da4;
+    cursor: pointer;
+}
+
+.lumpsum-calc-input input::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: #2b9da4;
+    cursor: pointer;
+}
+
+.lumpsum-calc-range {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+    color: #44475B;
+    font-size: 14px;
+}
+
+.lumpsum-calc-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lumpsum-calc-result-card {
+    padding: 28px;
+    border-radius: 10px;
+    background: #f8fbfb;
+}
+
+.lumpsum-calc-result-card p {
+    margin: 0;
+    color: #44475B;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.lumpsum-calc-result-card h2 {
+    margin: 8px 0 24px;
+    color: #2b9da4;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.lumpsum-calc-divider {
+    height: 1px;
+    margin-bottom: 20px;
+    background: #eeeeee;
+}
+
+.lumpsum-calc-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+    color: #44475B;
+    font-size: 16px;
+}
+
+.lumpsum-calc-row span,
+.lumpsum-calc-row strong {
+    color: #44475B;
+}
+
+.lumpsum-calc-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: #2b9da4;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.lumpsum-calc-button:hover {
+    background: #23858b;
+}
+
+@media (max-width: 800px) {
+    .lumpsum-page {
+        padding: 20px 5%;
     }
 
-    .lumpsum-disclaimer p {
-        font-size: 16px;
+    .lumpsum-calc-container {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .lumpsum-calc-header h1 {
+        font-size: 28px;
+    }
+
+    .lumpsum-calc-label {
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .lumpsum-calc-result-card {
+        padding: 22px;
+    }
+
+    .lumpsum-calc-result-card h2 {
+        font-size: 28px;
     }
 }

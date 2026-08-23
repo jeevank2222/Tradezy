@@ -1,5 +1,6 @@
 export const stocks = [
     {
+        id: 1,
         name: "Reliance Industries",
         symbol: "RELIANCE",
         price: 2845.20,
@@ -7,6 +8,7 @@ export const stocks = [
         logo: "/images/reliance.png"
     },
     {
+        id: 2,
         name: "Tata Consultancy Services",
         symbol: "TCS",
         price: 3912.40,
@@ -14,6 +16,7 @@ export const stocks = [
         logo: "/images/tcs.png"
     },
     {
+        id: 3,
         name: "Infosys",
         symbol: "INFY",
         price: 1542.10,
@@ -21,6 +24,7 @@ export const stocks = [
         logo: "/images/infosys.png"
     },
     {
+        id: 4,
         name: "HDFC Bank",
         symbol: "HDFCBANK",
         price: 1765.30,
@@ -28,6 +32,7 @@ export const stocks = [
         logo: "/images/hdfc.png"
     },
     {
+        id: 5,
         name: "ICICI Bank",
         symbol: "ICICIBANK",
         price: 1245.60,
@@ -35,6 +40,7 @@ export const stocks = [
         logo: "/images/icici.png"
     },
     {
+        id: 6,
         name: "State Bank of India",
         symbol: "SBIN",
         price: 812.40,
@@ -42,6 +48,7 @@ export const stocks = [
         logo: "/images/sbi.png"
     },
     {
+        id: 7,
         name: "ITC",
         symbol: "ITC",
         price: 425.30,
@@ -49,6 +56,7 @@ export const stocks = [
         logo: "/images/itc.png"
     },
     {
+        id: 8,
         name: "Bharti Airtel",
         symbol: "BHARTIARTL",
         price: 1875.20,

@@ -20,6 +20,7 @@ import Sip from './landing_page/investmentCalculator/Sip/Sip.js';
 import Swp from './landing_page/investmentCalculator/Swp/Swp.js';
 import Lumpsum from './landing_page/investmentCalculator/Lumpsum/Lumpsum.js';
 import Retirement from './landing_page/investmentCalculator/Retirement/Retirement.js';
+import StockDetails from './landing_page/stocks/StockDetails/StockDetails.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,6 +35,8 @@ root.render(
           <Route path="orders" element={<Orders />} />
           <Route path="positions" element={<Position />} />
     </Route>
+
+    <Route path="/stocks/explore/:symbol" element={<StockDetails />} />
 
     <Route path='/mutualfunds' element={<MutualFunds/>}>
             <Route index element={<ExploreMF/>} />

@@ -4,6 +4,122 @@ import "./Swp.css"
 function Swp() {
     return (
         <>
+
+            <div className="swp-page">
+                <div className="swp-calc-header">
+                    <h1>SWP Calculator</h1>
+                    <p>Calculate the potential returns from your systematic withdrawal plan</p>
+                </div>
+
+                <div className="swp-calc-container">
+                    <div className="swp-calc-inputs">
+                        <div className="swp-calc-input">
+                            <div className="swp-calc-label">
+                                <label>Total Investment</label>
+                                <span>₹10,00,000</span>
+                            </div>
+
+                            <input
+                                type="range"
+                                min="50000"
+                                max="10000000"
+                                defaultValue="1000000"
+                            />
+
+                            <div className="swp-calc-range">
+                                <span>₹50,000</span>
+                                <span>₹1 Cr</span>
+                            </div>
+                        </div>
+
+                        <div className="swp-calc-input">
+                            <div className="swp-calc-label">
+                                <label>Monthly Withdrawal</label>
+                                <span>₹10,000</span>
+                            </div>
+
+                            <input
+                                type="range"
+                                min="1000"
+                                max="100000"
+                                defaultValue="10000"
+                            />
+
+                            <div className="swp-calc-range">
+                                <span>₹1,000</span>
+                                <span>₹1,00,000</span>
+                            </div>
+                        </div>
+
+                        <div className="swp-calc-input">
+                            <div className="swp-calc-label">
+                                <label>Expected Return Rate (p.a.)</label>
+                                <span>12%</span>
+                            </div>
+
+                            <input
+                                type="range"
+                                min="1"
+                                max="30"
+                                defaultValue="12"
+                            />
+
+                            <div className="swp-calc-range">
+                                <span>1%</span>
+                                <span>30%</span>
+                            </div>
+                        </div>
+
+                        <div className="swp-calc-input">
+                            <div className="swp-calc-label">
+                                <label>Withdrawal Duration</label>
+                                <span>10 Years</span>
+                            </div>
+
+                            <input
+                                type="range"
+                                min="1"
+                                max="40"
+                                defaultValue="10"
+                            />
+
+                            <div className="swp-calc-range">
+                                <span>1 Year</span>
+                                <span>40 Years</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="swp-calc-result">
+                        <div className="swp-calc-result-card">
+                            <p>Estimated Final Value</p>
+                            <h2>₹13.78 L</h2>
+
+                            <div className="swp-calc-divider"></div>
+
+                            <div className="swp-calc-row">
+                                <span>Initial Investment</span>
+                                <strong>₹10.00 L</strong>
+                            </div>
+
+                            <div className="swp-calc-row">
+                                <span>Total Withdrawal</span>
+                                <strong>₹12.00 L</strong>
+                            </div>
+
+                            <div className="swp-calc-row">
+                                <span>Final Value</span>
+                                <strong>₹13.78 L</strong>
+                            </div>
+                        </div>
+
+                        <button className="swp-calc-button">
+                            Start Investing
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <div class="swp-information">
                 <section class="swp-section">
                     <h2>SWP Calculator – Systematic Withdrawal Plan Calculator</h2>

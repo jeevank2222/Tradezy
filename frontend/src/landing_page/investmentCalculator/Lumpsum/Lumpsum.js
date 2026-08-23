@@ -4,6 +4,105 @@ import "./Lumpsum.css"
 function Lumpsum() {
     return (
         <>
+
+            <div className="lumpsum-page">
+                <div className="lumpsum-calc-header">
+                    <h1>Lumpsum Calculator</h1>
+                    <p>Calculate the potential returns on your lumpsum investment</p>
+                </div>
+
+                <div className="lumpsum-calc-container">
+                    <div className="lumpsum-calc-inputs">
+                        <div className="lumpsum-calc-input">
+                            <div className="lumpsum-calc-label">
+                                <label>Total Investment</label>
+                                <span>₹5,00,000</span>
+                            </div>
+
+                            <input
+                                type="range"
+                                min="5000"
+                                max="10000000"
+                                defaultValue="500000"
+                            />
+
+                            <div className="lumpsum-calc-range">
+                                <span>₹5,000</span>
+                                <span>₹1 Cr</span>
+                            </div>
+                        </div>
+
+                        <div className="lumpsum-calc-input">
+                            <div className="lumpsum-calc-label">
+                                <label>Expected Return Rate (p.a.)</label>
+                                <span>12%</span>
+                            </div>
+
+                            <input
+                                type="range"
+                                min="1"
+                                max="30"
+                                defaultValue="12"
+                            />
+
+                            <div className="lumpsum-calc-range">
+                                <span>1%</span>
+                                <span>30%</span>
+                            </div>
+                        </div>
+
+                        <div className="lumpsum-calc-input">
+                            <div className="lumpsum-calc-label">
+                                <label>Investment Duration</label>
+                                <span>10 Years</span>
+                            </div>
+
+                            <input
+                                type="range"
+                                min="1"
+                                max="40"
+                                defaultValue="10"
+                            />
+
+                            <div className="lumpsum-calc-range">
+                                <span>1 Year</span>
+                                <span>40 Years</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="lumpsum-calc-result">
+                        <div className="lumpsum-calc-result-card">
+                            <p>Estimated Value</p>
+                            <h2>₹15.53 L</h2>
+
+                            <div className="lumpsum-calc-divider"></div>
+
+                            <div className="lumpsum-calc-row">
+                                <span>Invested Amount</span>
+                                <strong>₹5.00 L</strong>
+                            </div>
+
+                            <div className="lumpsum-calc-row">
+                                <span>Est. Returns</span>
+                                <strong>₹10.53 L</strong>
+                            </div>
+
+                            <div className="lumpsum-calc-row">
+                                <span>Total Value</span>
+                                <strong>₹15.53 L</strong>
+                            </div>
+                        </div>
+
+                        <button className="lumpsum-calc-button">
+                            Start Investing
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
             <div className="lumpsum-information">
 
                 <section className="lumpsum-section">

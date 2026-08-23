@@ -1,6 +1,15 @@
+import { useNavigate } from "react-router-dom";
+
 function StockCard({ stock }) {
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate(`/stocks/explore/${stock.symbol}`);
+    };
+
     return (
-        <div className="stock-card">
+        <div className="stock-card" onClick={handleClick}>
 
             <img
                 src={stock.logo}

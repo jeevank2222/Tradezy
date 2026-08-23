@@ -4,6 +4,118 @@ import "./Fd.css";
 function Fixed() {
     return (
         <>
+
+            <div className="fd-page">
+                <div className="fd-calc-header">
+                    <h1>FD Calculator</h1>
+                    <p>Calculate the maturity amount and interest earned on your fixed deposit</p>
+                </div>
+
+                <div className="fd-calc-container">
+                    <div className="fd-calc-inputs">
+                        <div className="fd-calc-input">
+                            <div className="fd-calc-label">
+                                <label>Investment Amount</label>
+                                <span>₹5,00,000</span>
+                            </div>
+
+                            <input
+                                type="range"
+                                min="5000"
+                                max="10000000"
+                                defaultValue="500000"
+                            />
+
+                            <div className="fd-calc-range">
+                                <span>₹5,000</span>
+                                <span>₹1 Cr</span>
+                            </div>
+                        </div>
+
+                        <div className="fd-calc-input">
+                            <div className="fd-calc-label">
+                                <label>Interest Rate (p.a.)</label>
+                                <span>7%</span>
+                            </div>
+
+                            <input
+                                type="range"
+                                min="1"
+                                max="15"
+                                defaultValue="7"
+                            />
+
+                            <div className="fd-calc-range">
+                                <span>1%</span>
+                                <span>15%</span>
+                            </div>
+                        </div>
+
+                        <div className="fd-calc-input">
+                            <div className="fd-calc-label">
+                                <label>Investment Duration</label>
+                                <span>5 Years</span>
+                            </div>
+
+                            <input
+                                type="range"
+                                min="1"
+                                max="20"
+                                defaultValue="5"
+                            />
+
+                            <div className="fd-calc-range">
+                                <span>1 Year</span>
+                                <span>20 Years</span>
+                            </div>
+                        </div>
+
+                        <div className="fd-calc-input">
+                            <div className="fd-calc-label">
+                                <label>Compounding Frequency</label>
+                                <span>Quarterly</span>
+                            </div>
+
+                            <select defaultValue="quarterly">
+                                <option value="monthly">Monthly</option>
+                                <option value="quarterly">Quarterly</option>
+                                <option value="half-yearly">Half-Yearly</option>
+                                <option value="yearly">Yearly</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div className="fd-calc-result">
+                        <div className="fd-calc-result-card">
+                            <p>Maturity Amount</p>
+                            <h2>₹7.08 L</h2>
+
+                            <div className="fd-calc-divider"></div>
+
+                            <div className="fd-calc-row">
+                                <span>Principal Amount</span>
+                                <strong>₹5.00 L</strong>
+                            </div>
+
+                            <div className="fd-calc-row">
+                                <span>Interest Earned</span>
+                                <strong>₹2.08 L</strong>
+                            </div>
+
+                            <div className="fd-calc-row">
+                                <span>Maturity Amount</span>
+                                <strong>₹7.08 L</strong>
+                            </div>
+                        </div>
+
+                        <button className="fd-calc-button">
+                            Start Investing
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
             <div className="fd-information">
 
                 <section className="fd-section">
