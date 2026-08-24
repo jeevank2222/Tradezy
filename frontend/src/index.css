@@ -12,6 +12,11 @@ code {
   font-family: monospace;
 }
 
+.Heroimg{
+  height: 1280;
+  width: 800;
+}
+
 .hero-title {
     font-size: 70px;
     color: #2D3142;
