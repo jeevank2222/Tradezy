@@ -1,1 +1,3 @@
-Tradezy
+Tradezy 
+
+A stock trading platform
