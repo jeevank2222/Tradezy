@@ -1,0 +1,593 @@
+.stock-market-section {
+    min-height: 720px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ffffff;
+
+    padding: 80px 20px;
+}
+
+
+/* CENTER CONTENT */
+
+.stock-market-content {
+    position: relative;
+
+    z-index: 5;
+
+    width: 600px;
+
+    text-align: center;
+}
+
+
+.stock-market-content h2 {
+    margin: 0;
+
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    font-weight: 600;
+
+    letter-spacing: -1px;
+
+    color: #44475b;
+}
+
+
+.stock-market-content p {
+    margin: 24px auto 30px;
+
+    max-width: 450px;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    color: #777986;
+}
+
+
+.stock-market-button {
+    border: none;
+
+    outline: none;
+
+    padding: 13px 28px;
+
+    border-radius: 25px;
+
+    background: #00b386;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.stock-market-button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 179, 134, 0.25);
+}
+
+
+/* STOCK CARD */
+
+.floating-stock-card {
+    position: absolute;
+
+    width: 220px;
+
+    height: 145px;
+
+    padding: 17px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.08);
+
+    z-index: 3;
+
+    transition:
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.floating-stock-card:hover {
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.14);
+
+    z-index: 10;
+}
+
+
+/* CARD HEADER */
+
+.stock-card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.company-logo {
+    width: 38px;
+
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f1f3f5;
+
+    color: #44475b;
+
+    font-size: 15px;
+
+    font-weight: 700;
+}
+
+
+.company-details h4 {
+    margin: 0;
+
+    max-width: 140px;
+
+    overflow: hidden;
+
+    white-space: nowrap;
+
+    text-overflow: ellipsis;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    color: #44475b;
+}
+
+
+.company-details span {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 11px;
+
+    color: #9698a4;
+}
+
+
+/* PRICE */
+
+.stock-card-price {
+    margin-top: 13px;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    color: #44475b;
+}
+
+
+/* CHANGE */
+
+.stock-card-change {
+    margin-top: 3px;
+
+    font-size: 12px;
+
+    font-weight: 500;
+}
+
+
+.stock-positive {
+    color: #00b386;
+}
+
+
+.stock-negative {
+    color: #e5484d;
+}
+
+
+/* CHART */
+
+.mini-chart {
+    position: absolute;
+
+    left: 17px;
+
+    right: 17px;
+
+    bottom: 8px;
+
+    height: 40px;
+
+    overflow: hidden;
+}
+
+
+.mini-chart svg {
+    width: 100%;
+
+    height: 100%;
+}
+
+
+.positive-line {
+    stroke: #00b386;
+}
+
+
+.negative-line {
+    stroke: #e5484d;
+}
+
+
+/* TOP CARDS */
+
+.card-1 {
+    left: 5%;
+
+    top: 18%;
+
+    animation:
+        floatOne 5s ease-in-out infinite;
+}
+
+
+.card-2 {
+    left: 25%;
+
+    top: 7%;
+
+    animation:
+        floatTwo 6s ease-in-out infinite;
+}
+
+
+.card-3 {
+    right: 25%;
+
+    top: 7%;
+
+    animation:
+        floatThree 5.5s ease-in-out infinite;
+}
+
+
+.card-4 {
+    right: 5%;
+
+    top: 18%;
+
+    animation:
+        floatFour 6.5s ease-in-out infinite;
+}
+
+
+/* BOTTOM CARDS */
+
+.card-5 {
+    left: 5%;
+
+    bottom: 18%;
+
+    animation:
+        floatFive 5.8s ease-in-out infinite;
+}
+
+
+.card-6 {
+    left: 25%;
+
+    bottom: 7%;
+
+    animation:
+        floatSix 5.2s ease-in-out infinite;
+}
+
+
+.card-7 {
+    right: 25%;
+
+    bottom: 7%;
+
+    animation:
+        floatSeven 5.7s ease-in-out infinite;
+}
+
+
+.card-8 {
+    right: 5%;
+
+    bottom: 18%;
+
+    animation:
+        floatEight 6.2s ease-in-out infinite;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes floatOne {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(-3deg);
+    }
+
+    50% {
+        transform:
+            translateY(-18px)
+            rotate(1deg);
+    }
+
+    100% {
+        transform:
+            translateY(0)
+            rotate(-3deg);
+    }
+}
+
+
+@keyframes floatTwo {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(2deg);
+    }
+
+    50% {
+        transform:
+            translateY(-14px)
+            rotate(-2deg);
+    }
+
+    100% {
+        transform:
+            translateY(0)
+            rotate(2deg);
+    }
+}
+
+
+@keyframes floatThree {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(-2deg);
+    }
+
+    50% {
+        transform:
+            translateY(-20px)
+            rotate(2deg);
+    }
+
+    100% {
+        transform:
+            translateY(0)
+            rotate(-2deg);
+    }
+}
+
+
+@keyframes floatFour {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(3deg);
+    }
+
+    50% {
+        transform:
+            translateY(-15px)
+            rotate(-1deg);
+    }
+
+    100% {
+        transform:
+            translateY(0)
+            rotate(3deg);
+    }
+}
+
+
+@keyframes floatFive {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(2deg);
+    }
+
+    50% {
+        transform:
+            translateY(15px)
+            rotate(-2deg);
+    }
+
+    100% {
+        transform:
+            translateY(0)
+            rotate(2deg);
+    }
+}
+
+
+@keyframes floatSix {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(-2deg);
+    }
+
+    50% {
+        transform:
+            translateY(18px)
+            rotate(2deg);
+    }
+
+    100% {
+        transform:
+            translateY(0)
+            rotate(-2deg);
+    }
+}
+
+
+@keyframes floatSeven {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(2deg);
+    }
+
+    50% {
+        transform:
+            translateY(14px)
+            rotate(-2deg);
+    }
+
+    100% {
+        transform:
+            translateY(0)
+            rotate(2deg);
+    }
+}
+
+
+@keyframes floatEight {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(-3deg);
+    }
+
+    50% {
+        transform:
+            translateY(17px)
+            rotate(1deg);
+    }
+
+    100% {
+        transform:
+            translateY(0)
+            rotate(-3deg);
+    }
+}
+
+
+/* TABLET */
+
+@media (max-width: 1100px) {
+
+    .card-1 {
+        left: 2%;
+    }
+
+    .card-4 {
+        right: 2%;
+    }
+
+    .card-5 {
+        left: 2%;
+    }
+
+    .card-8 {
+        right: 2%;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .stock-market-section {
+        min-height: auto;
+
+        display: block;
+
+        padding: 70px 20px 50px;
+    }
+
+
+    .stock-market-content {
+        width: 100%;
+    }
+
+
+    .stock-market-content h2 {
+        font-size: 36px;
+    }
+
+
+    .stock-market-content p {
+        font-size: 15px;
+    }
+
+
+    .floating-stock-card {
+        position: relative;
+
+        left: auto !important;
+
+        right: auto !important;
+
+        top: auto !important;
+
+        bottom: auto !important;
+
+        margin: 25px auto;
+
+        animation: none;
+    }
+
+}
