@@ -1,4 +1,5 @@
 import React from 'react';
+import MutualFundShowcase from './MutualFundShowcase';
 
 function Mfui() {
     return ( 
@@ -6,7 +7,7 @@ function Mfui() {
         <h1 className='home-head'>Start Small. Grow Big</h1>
         <h3 className='home-small-head'>Invest in Mutual Funds</h3>
         <button>Invest now</button>
-        <h1>Mutual fund UI</h1>
+        <MutualFundShowcase />
         </div>
      );
 }

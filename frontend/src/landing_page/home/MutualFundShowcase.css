@@ -1,0 +1,803 @@
+.mf-showcase-section {
+    width: 100%;
+    padding: 90px 20px 110px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+
+/* HEADING */
+
+.mf-showcase-heading {
+    max-width: 1100px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.mf-showcase-heading h2 {
+    margin: 0;
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 600;
+    color: #44475b;
+    letter-spacing: -1px;
+}
+
+.mf-showcase-heading h2 span {
+    color: #00b386;
+}
+
+.mf-showcase-heading p {
+    margin: 16px 0 0;
+    font-size: 17px;
+    color: #777986;
+}
+
+
+/* MAIN AREA */
+
+.mf-showcase {
+    position: relative;
+    width: 100%;
+    max-width: 1250px;
+    height: 720px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+
+/* GRID */
+
+.mf-grid-background {
+    position: absolute;
+    inset: 0;
+
+    background-color: #ffffff;
+
+    background-image:
+        linear-gradient(
+            #e8eaed 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            #e8eaed 1px,
+            transparent 1px
+        );
+
+    background-size: 71px 71px;
+}
+
+
+/* FLOATING CARD */
+
+.mf-floating-card {
+    position: absolute;
+
+    z-index: 3;
+
+    width: 120px;
+    min-height: 105px;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* HOVER */
+
+.mf-floating-card:hover {
+    transform: scale(1.12);
+
+    z-index: 20;
+
+    border-color: #00b386;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+/* LOGO */
+
+.mf-logo-container {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    border-radius: 10px;
+}
+
+.mf-logo-image {
+    width: 44px;
+    height: 44px;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+}
+
+/* FUND NAME */
+
+.mf-small-name {
+    margin: 8px 0 0;
+
+    text-align: center;
+
+    font-size: 10px;
+
+    line-height: 1.3;
+
+    color: #44475b;
+}
+
+
+/* POSITIONS */
+
+
+/* LEFT COLUMN */
+
+.fund-1 {
+    left: 4%;
+    top: 14%;
+}
+
+.fund-2 {
+    left: 15%;
+    top: 14%;
+}
+
+.fund-3 {
+    left: 26%;
+    top: 14%;
+}
+
+
+.fund-4 {
+    left: 4%;
+    top: 35%;
+}
+
+.fund-5 {
+    left: 15%;
+    top: 35%;
+}
+
+.fund-6 {
+    left: 26%;
+    top: 35%;
+}
+
+
+.fund-7 {
+    left: 4%;
+    top: 56%;
+}
+
+.fund-8 {
+    left: 15%;
+    top: 56%;
+}
+
+.fund-9 {
+    left: 26%;
+    top: 56%;
+}
+
+
+.fund-10 {
+    left: 4%;
+    top: 77%;
+}
+
+
+/* RIGHT COLUMN */
+
+.fund-11 {
+    right: 26%;
+    top: 14%;
+}
+
+.fund-12 {
+    right: 15%;
+    top: 14%;
+}
+
+.fund-13 {
+    right: 4%;
+    top: 14%;
+}
+
+
+.fund-14 {
+    right: 26%;
+    top: 35%;
+}
+
+.fund-15 {
+    right: 15%;
+    top: 35%;
+}
+
+.fund-16 {
+    right: 4%;
+    top: 35%;
+}
+
+
+.fund-17 {
+    right: 26%;
+    top: 56%;
+}
+
+.fund-18 {
+    right: 15%;
+    top: 56%;
+}
+
+.fund-19 {
+    right: 4%;
+    top: 56%;
+}
+
+
+.fund-20 {
+    right: 15%;
+    top: 77%;
+}
+
+
+/* MAIN FUND CARD */
+
+.mf-main-card {
+    position: absolute;
+
+    z-index: 10;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 400px;
+    min-height: 590px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e4e4;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+
+/* MAIN HEADER */
+
+.mf-main-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+.mf-main-logo {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #effaf6;
+}
+
+.mf-main-logo img {
+    max-width: 42px;
+    max-height: 42px;
+
+    object-fit: contain;
+}
+
+.mf-main-header h3 {
+    margin: 0;
+
+    font-size: 17px;
+
+    line-height: 1.35;
+
+    font-weight: 600;
+
+    color: #44475b;
+}
+
+.mf-main-header p {
+    margin: 5px 0 0;
+
+    font-size: 11px;
+
+    color: #9698a4;
+}
+
+
+/* RETURN */
+
+.mf-return {
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 8px;
+
+    margin-top: 27px;
+}
+
+.mf-return strong {
+    font-size: 27px;
+
+    font-weight: 600;
+
+    color: #00b386;
+}
+
+.mf-return span {
+    font-size: 12px;
+
+    color: #9698a4;
+}
+
+
+/* DAILY */
+
+.mf-daily {
+    display: flex;
+
+    gap: 7px;
+
+    align-items: center;
+
+    margin-top: 3px;
+}
+
+.mf-daily strong {
+    font-size: 13px;
+
+    color: #00b386;
+}
+
+.mf-daily span {
+    font-size: 11px;
+
+    color: #9698a4;
+}
+
+
+/* CHART */
+
+.mf-chart {
+    height: 250px;
+
+    margin-top: 15px;
+
+    overflow: hidden;
+}
+
+.mf-chart svg {
+    width: 100%;
+    height: 100%;
+}
+
+.mf-chart-line {
+    fill: none;
+
+    stroke: #00b386;
+
+    stroke-width: 3;
+
+    stroke-linecap: round;
+
+    stroke-dasharray: 1000;
+
+    stroke-dashoffset: 1000;
+
+    animation:
+        drawMfChart 2s ease forwards;
+}
+
+
+@keyframes drawMfChart {
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* PERIODS */
+
+.mf-periods {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 14px;
+
+    margin-top: -2px;
+}
+
+.mf-periods span {
+    font-size: 11px;
+
+    color: #8b8d98;
+
+    cursor: pointer;
+}
+
+.mf-periods span:hover {
+    color: #00b386;
+}
+
+.mf-periods .selected-period {
+    width: 42px;
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #777986;
+
+    border-radius: 50%;
+
+    color: #44475b;
+
+    font-weight: 600;
+}
+
+
+/* ACTIONS */
+
+.mf-actions {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-top: 28px;
+}
+
+.mf-actions button {
+    height: 58px;
+
+    border: 1px solid #e2e4e6;
+
+    border-radius: 12px;
+
+    background: #ffffff;
+
+    color: #777986;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.mf-actions button:hover {
+    border-color: #00b386;
+
+    color: #00b386;
+
+    transform: translateY(-2px);
+}
+
+.mf-actions .mf-sip-button {
+    background: #00b386;
+
+    border-color: #00b386;
+
+    color: #ffffff;
+
+    font-weight: 600;
+}
+
+.mf-actions .mf-sip-button:hover {
+    background: #009f78;
+
+    color: #ffffff;
+}
+
+
+/* FLOATING ANIMATIONS */
+
+.fund-1,
+.fund-7,
+.fund-13 {
+    animation: mfFloatOne 5s ease-in-out infinite;
+}
+
+.fund-2,
+.fund-8,
+.fund-14 {
+    animation: mfFloatTwo 6s ease-in-out infinite;
+}
+
+.fund-3,
+.fund-9,
+.fund-15 {
+    animation: mfFloatThree 5.5s ease-in-out infinite;
+}
+
+.fund-4,
+.fund-10,
+.fund-16 {
+    animation: mfFloatFour 6.5s ease-in-out infinite;
+}
+
+.fund-5,
+.fund-11,
+.fund-17 {
+    animation: mfFloatFive 5.8s ease-in-out infinite;
+}
+
+.fund-6,
+.fund-12,
+.fund-18 {
+    animation: mfFloatSix 6.2s ease-in-out infinite;
+}
+
+.fund-19,
+.fund-20 {
+    animation: mfFloatSeven 5.2s ease-in-out infinite;
+}
+
+
+@keyframes mfFloatOne {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -10px;
+    }
+}
+
+
+@keyframes mfFloatTwo {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: 12px;
+    }
+}
+
+
+@keyframes mfFloatThree {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -14px;
+    }
+}
+
+
+@keyframes mfFloatFour {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: 9px;
+    }
+}
+
+
+@keyframes mfFloatFive {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -12px;
+    }
+}
+
+
+@keyframes mfFloatSix {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: 10px;
+    }
+}
+
+
+@keyframes mfFloatSeven {
+
+    0%,
+    100% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: -8px;
+    }
+}
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .mf-showcase {
+        height: 650px;
+    }
+
+    .mf-main-card {
+        width: 360px;
+    }
+
+    .mf-floating-card {
+        width: 100px;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .mf-showcase-section {
+        padding: 65px 15px 80px;
+    }
+
+    .mf-showcase-heading h2 {
+        font-size: 36px;
+    }
+
+    .mf-showcase-heading p {
+        font-size: 15px;
+    }
+
+    .mf-showcase {
+        height: 620px;
+    }
+
+    .mf-main-card {
+        width: 300px;
+        min-height: 500px;
+        padding: 20px;
+    }
+
+    .mf-chart {
+        height: 190px;
+    }
+
+    .mf-floating-card {
+        width: 70px;
+        min-height: 70px;
+        padding: 6px;
+    }
+
+    .mf-logo-container {
+        width: 35px;
+        height: 35px;
+    }
+
+    .mf-small-name {
+        display: none;
+    }
+
+    .fund-1 {
+        left: 2%;
+    }
+
+    .fund-2 {
+        left: 15%;
+    }
+
+    .fund-3 {
+        left: 28%;
+    }
+
+    .fund-4 {
+        left: 2%;
+    }
+
+    .fund-5 {
+        left: 15%;
+    }
+
+    .fund-6 {
+        left: 28%;
+    }
+
+    .fund-7 {
+        left: 2%;
+    }
+
+    .fund-8 {
+        left: 15%;
+    }
+
+    .fund-9 {
+        left: 28%;
+    }
+
+    .fund-10 {
+        left: 15%;
+    }
+
+    .fund-11,
+    .fund-12,
+    .fund-13,
+    .fund-14,
+    .fund-15,
+    .fund-16,
+    .fund-17,
+    .fund-18,
+    .fund-19,
+    .fund-20 {
+        display: none;
+    }
+}
