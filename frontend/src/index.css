@@ -12,9 +12,13 @@ code {
   font-family: monospace;
 }
 
-.Heroimg{
-  height: 1280;
-  width: 800;
+.Heroimg {
+    width: 100%;
+    max-width: 1400px;
+    height: 850px;
+    object-fit:fill;
+    display: block;
+    margin: 0 auto;
 }
 
 .hero-title {
