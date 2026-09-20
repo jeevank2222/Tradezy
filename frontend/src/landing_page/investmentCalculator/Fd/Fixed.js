@@ -1,7 +1,39 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./Fd.css";
 
 function Fixed() {
+    const [investment, setInvestment] = useState(500000);
+    const [rate, setRate] = useState(7);
+    const [years, setYears] = useState(5);
+    const [frequency, setFrequency] = useState("quarterly");
+
+    const frequencyMap = {
+    monthly: 12,
+    quarterly: 4,
+    "half-yearly": 2,
+    yearly: 1
+    };
+
+    const n = frequencyMap[frequency];
+
+    const maturityAmount =
+        investment * Math.pow(1 + rate / 100 / n, n * years);
+
+    const interestEarned = maturityAmount - investment;
+
+    const formatAmount = (amount) => {
+                                    if (amount >= 10000000) {
+                                        return `₹${(amount / 10000000).toFixed(2)} Cr`;
+                                    }
+
+                                    if (amount >= 100000) {
+                                        return `₹${(amount / 100000).toFixed(2)} L`;
+                                    }
+
+                                    return `₹${amount.toLocaleString("en-IN", {
+                                        maximumFractionDigits: 0
+                                    })}`;
+                                };
     return (
         <>
 
@@ -16,14 +48,15 @@ function Fixed() {
                         <div className="fd-calc-input">
                             <div className="fd-calc-label">
                                 <label>Investment Amount</label>
-                                <span>₹5,00,000</span>
+                                <span>₹{investment.toLocaleString("en-IN")}</span>
                             </div>
 
                             <input
                                 type="range"
                                 min="5000"
                                 max="10000000"
-                                defaultValue="500000"
+                                value={investment}
+                                onChange={(e) => setInvestment(Number(e.target.value))}
                             />
 
                             <div className="fd-calc-range">
@@ -35,14 +68,15 @@ function Fixed() {
                         <div className="fd-calc-input">
                             <div className="fd-calc-label">
                                 <label>Interest Rate (p.a.)</label>
-                                <span>7%</span>
+                                <span>{rate}%</span>
                             </div>
 
                             <input
                                 type="range"
                                 min="1"
                                 max="15"
-                                defaultValue="7"
+                                value={rate}
+                                onChange={(e) => setRate(Number(e.target.value))}
                             />
 
                             <div className="fd-calc-range">
@@ -54,14 +88,15 @@ function Fixed() {
                         <div className="fd-calc-input">
                             <div className="fd-calc-label">
                                 <label>Investment Duration</label>
-                                <span>5 Years</span>
+                                <span>{years} Years</span>
                             </div>
 
                             <input
                                 type="range"
                                 min="1"
                                 max="20"
-                                defaultValue="5"
+                                value={years}
+                                onChange={(e) => setYears(Number(e.target.value))}
                             />
 
                             <div className="fd-calc-range">
@@ -76,7 +111,10 @@ function Fixed() {
                                 <span>Quarterly</span>
                             </div>
 
-                            <select defaultValue="quarterly">
+                           <select
+                                value={frequency}
+                                onChange={(e) => setFrequency(e.target.value)}
+                            >
                                 <option value="monthly">Monthly</option>
                                 <option value="quarterly">Quarterly</option>
                                 <option value="half-yearly">Half-Yearly</option>
@@ -88,23 +126,23 @@ function Fixed() {
                     <div className="fd-calc-result">
                         <div className="fd-calc-result-card">
                             <p>Maturity Amount</p>
-                            <h2>₹7.08 L</h2>
+                            <h2>{formatAmount(maturityAmount)}</h2>
 
                             <div className="fd-calc-divider"></div>
 
                             <div className="fd-calc-row">
                                 <span>Principal Amount</span>
-                                <strong>₹5.00 L</strong>
+                                <strong>{formatAmount(investment)}</strong>
                             </div>
 
                             <div className="fd-calc-row">
                                 <span>Interest Earned</span>
-                                <strong>₹2.08 L</strong>
+                                <strong>{formatAmount(interestEarned)}</strong>
                             </div>
 
                             <div className="fd-calc-row">
                                 <span>Maturity Amount</span>
-                                <strong>₹7.08 L</strong>
+                                <strong>{formatAmount(maturityAmount)}</strong>
                             </div>
                         </div>
 

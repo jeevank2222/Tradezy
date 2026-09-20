@@ -1,7 +1,37 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./Sip.css"
 
 function Sip() {
+        const [monthlyInvestment, setMonthlyInvestment] = useState(5000);
+    const [returnRate, setReturnRate] = useState(12);
+    const [years, setYears] = useState(10);
+
+    const months = years * 12;
+
+    const monthlyRate = Math.pow(1 + returnRate / 100, 1 / 12) - 1;
+
+    const estimatedValue =
+        monthlyInvestment *
+        ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate) *
+        (1 + monthlyRate);
+
+    const investedAmount = monthlyInvestment * months;
+
+    const estimatedReturns = estimatedValue - investedAmount;
+
+    const formatAmount = (amount) => {
+        if (amount >= 10000000) {
+            return `₹${(amount / 10000000).toFixed(2)} Cr`;
+        }
+
+        if (amount >= 100000) {
+            return `₹${(amount / 100000).toFixed(2)} L`;
+        }
+
+        return `₹${amount.toLocaleString("en-IN", {
+            maximumFractionDigits: 0
+        })}`;
+    };
     return (
         <>
              <div className="sip-page">
@@ -15,14 +45,15 @@ function Sip() {
                     <div className="sip-calc-input">
                         <div className="sip-calc-label">
                             <label>Monthly Investment</label>
-                            <span>₹5,000</span>
+                            <span>₹{monthlyInvestment.toLocaleString("en-IN")}</span>
                         </div>
 
                         <input
                             type="range"
                             min="500"
                             max="100000"
-                            defaultValue="5000"
+                            value={monthlyInvestment}
+                            onChange={(e) => setMonthlyInvestment(Number(e.target.value))}
                         />
 
                         <div className="sip-calc-range">
@@ -34,14 +65,15 @@ function Sip() {
                     <div className="sip-calc-input">
                         <div className="sip-calc-label">
                             <label>Expected Return Rate (p.a.)</label>
-                            <span>12%</span>
+                            <span>{returnRate}%</span>
                         </div>
 
                         <input
                             type="range"
                             min="1"
                             max="30"
-                            defaultValue="12"
+                            value={returnRate}
+                            onChange={(e) => setReturnRate(Number(e.target.value))}
                         />
 
                         <div className="sip-calc-range">
@@ -53,14 +85,15 @@ function Sip() {
                     <div className="sip-calc-input">
                         <div className="sip-calc-label">
                             <label>Investment Duration</label>
-                            <span>10 Years</span>
+                            <span>{years} Years</span>
                         </div>
 
                         <input
                             type="range"
                             min="1"
                             max="40"
-                            defaultValue="10"
+                            value={years}
+                            onChange={(e) => setYears(Number(e.target.value))}
                         />
 
                         <div className="sip-calc-range">
@@ -73,23 +106,23 @@ function Sip() {
                 <div className="sip-calc-result">
                     <div className="sip-calc-result-card">
                         <p>Estimated Value</p>
-                        <h2>₹11.62 L</h2>
+                        <h2>{formatAmount(estimatedValue)}</h2>
 
                         <div className="sip-calc-divider"></div>
 
                         <div className="sip-calc-row">
                             <span>Invested Amount</span>
-                            <strong>₹6.00 L</strong>
+                            <strong>{formatAmount(investedAmount)}</strong>
                         </div>
 
                         <div className="sip-calc-row">
                             <span>Est. Returns</span>
-                            <strong>₹5.62 L</strong>
+                            <strong>{formatAmount(estimatedReturns)}</strong>
                         </div>
 
                         <div className="sip-calc-row">
                             <span>Total Value</span>
-                            <strong>₹11.62 L</strong>
+                            <strong>{formatAmount(estimatedValue)}</strong>
                         </div>
                     </div>
 

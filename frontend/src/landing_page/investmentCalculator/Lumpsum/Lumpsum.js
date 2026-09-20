@@ -1,7 +1,29 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./Lumpsum.css"
 
 function Lumpsum() {
+        const [investment, setInvestment] = useState(500000);
+    const [returnRate, setReturnRate] = useState(12);
+    const [years, setYears] = useState(10);
+
+    const estimatedValue =
+        investment * Math.pow(1 + returnRate / 100, years);
+
+    const estimatedReturns = estimatedValue - investment;
+
+    const formatAmount = (amount) => {
+        if (amount >= 10000000) {
+            return `₹${(amount / 10000000).toFixed(2)} Cr`;
+        }
+
+        if (amount >= 100000) {
+            return `₹${(amount / 100000).toFixed(2)} L`;
+        }
+
+        return `₹${amount.toLocaleString("en-IN", {
+            maximumFractionDigits: 0
+        })}`;
+    };
     return (
         <>
 
@@ -16,14 +38,15 @@ function Lumpsum() {
                         <div className="lumpsum-calc-input">
                             <div className="lumpsum-calc-label">
                                 <label>Total Investment</label>
-                                <span>₹5,00,000</span>
+                                <span>₹{investment.toLocaleString("en-IN")}</span>
                             </div>
 
                             <input
                                 type="range"
                                 min="5000"
                                 max="10000000"
-                                defaultValue="500000"
+                                value={investment}
+                                onChange={(e) => setInvestment(Number(e.target.value))}
                             />
 
                             <div className="lumpsum-calc-range">
@@ -35,14 +58,15 @@ function Lumpsum() {
                         <div className="lumpsum-calc-input">
                             <div className="lumpsum-calc-label">
                                 <label>Expected Return Rate (p.a.)</label>
-                                <span>12%</span>
+                                <span>{returnRate}%</span>
                             </div>
 
                             <input
                                 type="range"
                                 min="1"
                                 max="30"
-                                defaultValue="12"
+                                value={returnRate}
+                                onChange={(e) => setReturnRate(Number(e.target.value))}
                             />
 
                             <div className="lumpsum-calc-range">
@@ -54,14 +78,15 @@ function Lumpsum() {
                         <div className="lumpsum-calc-input">
                             <div className="lumpsum-calc-label">
                                 <label>Investment Duration</label>
-                                <span>10 Years</span>
+                                <span>{years} Years</span>
                             </div>
 
                             <input
                                 type="range"
                                 min="1"
                                 max="40"
-                                defaultValue="10"
+                                value={years}
+                                onChange={(e) => setYears(Number(e.target.value))}
                             />
 
                             <div className="lumpsum-calc-range">
@@ -74,23 +99,23 @@ function Lumpsum() {
                     <div className="lumpsum-calc-result">
                         <div className="lumpsum-calc-result-card">
                             <p>Estimated Value</p>
-                            <h2>₹15.53 L</h2>
+                            <h2>{formatAmount(estimatedValue)}</h2>
 
                             <div className="lumpsum-calc-divider"></div>
 
                             <div className="lumpsum-calc-row">
                                 <span>Invested Amount</span>
-                                <strong>₹5.00 L</strong>
+                                <strong>{formatAmount(investment)}</strong>
                             </div>
 
                             <div className="lumpsum-calc-row">
                                 <span>Est. Returns</span>
-                                <strong>₹10.53 L</strong>
+                                <strong>{formatAmount(estimatedReturns)}</strong>
                             </div>
 
                             <div className="lumpsum-calc-row">
                                 <span>Total Value</span>
-                                <strong>₹15.53 L</strong>
+                               <strong>{formatAmount(estimatedValue)}</strong>
                             </div>
                         </div>
 

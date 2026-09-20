@@ -1,7 +1,49 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./Swp.css"
 
 function Swp() {
+        const [investment, setInvestment] = useState(1000000);
+    const [withdrawal, setWithdrawal] = useState(10000);
+    const [returnRate, setReturnRate] = useState(12);
+    const [years, setYears] = useState(10);
+
+    const months = years * 12;
+
+    const monthlyRate = Math.pow(1 + returnRate / 100, 1 / 12) - 1;
+
+    let balance = investment;
+
+    for (let i = 0; i < months; i++) {
+        balance = balance * (1 + monthlyRate);
+        balance = balance - withdrawal;
+
+        if (balance < 0) {
+            balance = 0;
+            break;
+        }
+    }
+
+    const finalValue = balance;
+
+    const totalWithdrawal = Math.min(
+        investment + (investment * returnRate / 100 * years),
+        withdrawal * months
+    );
+
+    const formatAmount = (amount) => {
+        if (amount >= 10000000) {
+            return `₹${(amount / 10000000).toFixed(2)} Cr`;
+        }
+
+        if (amount >= 100000) {
+            return `₹${(amount / 100000).toFixed(2)} L`;
+        }
+
+        return `₹${amount.toLocaleString("en-IN", {
+            maximumFractionDigits: 0
+        })}`;
+    };
+
     return (
         <>
 
@@ -16,14 +58,15 @@ function Swp() {
                         <div className="swp-calc-input">
                             <div className="swp-calc-label">
                                 <label>Total Investment</label>
-                                <span>₹10,00,000</span>
+                                <span>₹{investment.toLocaleString("en-IN")}</span>
                             </div>
 
                             <input
                                 type="range"
                                 min="50000"
                                 max="10000000"
-                                defaultValue="1000000"
+                                value={investment}
+                                onChange={(e) => setInvestment(Number(e.target.value))}
                             />
 
                             <div className="swp-calc-range">
@@ -35,14 +78,15 @@ function Swp() {
                         <div className="swp-calc-input">
                             <div className="swp-calc-label">
                                 <label>Monthly Withdrawal</label>
-                                <span>₹10,000</span>
+                                <span>₹{withdrawal.toLocaleString("en-IN")}</span>
                             </div>
 
                             <input
                                 type="range"
                                 min="1000"
                                 max="100000"
-                                defaultValue="10000"
+                                value={withdrawal}
+                                onChange={(e) => setWithdrawal(Number(e.target.value))}
                             />
 
                             <div className="swp-calc-range">
@@ -54,14 +98,15 @@ function Swp() {
                         <div className="swp-calc-input">
                             <div className="swp-calc-label">
                                 <label>Expected Return Rate (p.a.)</label>
-                                <span>12%</span>
+                                <span>{returnRate}%</span>
                             </div>
 
                             <input
                                 type="range"
                                 min="1"
                                 max="30"
-                                defaultValue="12"
+                                value={returnRate}
+                                onChange={(e) => setReturnRate(Number(e.target.value))}
                             />
 
                             <div className="swp-calc-range">
@@ -73,14 +118,15 @@ function Swp() {
                         <div className="swp-calc-input">
                             <div className="swp-calc-label">
                                 <label>Withdrawal Duration</label>
-                                <span>10 Years</span>
+                                <span>{years} Years</span>
                             </div>
 
                             <input
                                 type="range"
                                 min="1"
                                 max="40"
-                                defaultValue="10"
+                                value={years}
+                                onChange={(e) => setYears(Number(e.target.value))}
                             />
 
                             <div className="swp-calc-range">
@@ -93,23 +139,23 @@ function Swp() {
                     <div className="swp-calc-result">
                         <div className="swp-calc-result-card">
                             <p>Estimated Final Value</p>
-                            <h2>₹13.78 L</h2>
+                            <h2>{formatAmount(finalValue)}</h2>
 
                             <div className="swp-calc-divider"></div>
 
                             <div className="swp-calc-row">
                                 <span>Initial Investment</span>
-                                <strong>₹10.00 L</strong>
+                                <strong>{formatAmount(investment)}</strong>
                             </div>
 
                             <div className="swp-calc-row">
                                 <span>Total Withdrawal</span>
-                                <strong>₹12.00 L</strong>
+                                <strong>{formatAmount(totalWithdrawal)}</strong>
                             </div>
 
                             <div className="swp-calc-row">
                                 <span>Final Value</span>
-                                <strong>₹13.78 L</strong>
+                                <strong>{formatAmount(finalValue)}</strong>
                             </div>
                         </div>
 
